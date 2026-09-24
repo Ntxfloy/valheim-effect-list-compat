@@ -1,6 +1,6 @@
 # Valheim Compatibility Bridges
 
-[![Thunderstore Version](https://img.shields.io/badge/Thunderstore-v0.1.6-blue.svg)](https://thunderstore.io/c/valheim/p/Ntxfloy/ValheimEffectListCompat/)
+[![Thunderstore Version](https://img.shields.io/badge/Thunderstore-v0.1.7-blue.svg)](https://thunderstore.io/c/valheim/p/Ntxfloy/ValheimEffectListCompat/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Target: Valheim 1.0 (Unity 6)](https://img.shields.io/badge/Valheim-1.0%20(Unity%206)-orange.svg)](https://valheimgame.com/)
 
@@ -101,7 +101,7 @@ Settings are saved in `BepInEx/config/ntxfloy.valheimscenecompat.cfg`:
 
 ### Manual Installation
 1. Ensure [BepInExPack Valheim](https://valheim.thunderstore.io/package/denikson/BepInExPack_Valheim/) is installed.
-2. Download and extract `ValheimEffectListCompat-0.1.5.zip`.
+2. Download and extract the latest release archive (e.g. `Ntxfloy-ValheimEffectListCompat-0.1.7.zip`).
 3. Copy the `BepInEx` folder from the archive directly into your Valheim game directory:
    - Patcher goes to: `Valheim/BepInEx/patchers/Ntxfloy-ValheimEffectListCompat/ValheimEffectListCompat.dll`
    - Plugin goes to: `Valheim/BepInEx/plugins/Ntxfloy-ValheimSceneCompat/ValheimSceneCompat.dll`

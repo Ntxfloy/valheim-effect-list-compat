@@ -1,7 +1,7 @@
 {
   "name": "ValheimEffectListCompat",
   "author": "Ntxfloy",
-  "version_number": "0.1.6",
+  "version_number": "0.1.7",
   "website_url": "https://thunderstore.io/c/valheim/p/Ntxfloy/ValheimEffectListCompat/",
   "description": "Compatibility bridge for Valheim 1.0 (Unity 6): restores EffectList.Create 5-arg forwarder and fixes ZNetScene.RemoveObjects NRE cascade.",
   "dependencies": [

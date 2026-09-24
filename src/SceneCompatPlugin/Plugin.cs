@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace ValheimSceneCompat
 {
-    [BepInPlugin("ntxfloy.valheimscenecompat", "Valheim Scene Compatibility", "0.1.6")]
+    [BepInPlugin("ntxfloy.valheimscenecompat", "Valheim Scene Compatibility", "0.1.7")]
     public class Plugin : BaseUnityPlugin
     {
         internal static ManualLogSource Log;
