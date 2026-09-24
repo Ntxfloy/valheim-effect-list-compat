@@ -36,12 +36,3 @@ Copy-Item "$PSScriptRoot\src\SceneCompatPlugin\bin\Release\netstandard2.1\Valhei
 if (Test-Path -LiteralPath $zipPath) { Remove-Item -LiteralPath $zipPath -Force }
 Compress-Archive -Path "$staging\*" -DestinationPath $zipPath
 Write-Host "Thunderstore package ready: $zipPath" -ForegroundColor Green
-
-$desktopDir = Join-Path $env:USERPROFILE "Desktop"
-if (Test-Path $desktopDir) {
-    $desktopZip = Join-Path $desktopDir $pkgName
-    Copy-Item $zipPath -Destination $desktopZip -Force
-    # Also keep non-prefixed copy for backward compatibility
-    Copy-Item $zipPath -Destination (Join-Path $desktopDir "ValheimEffectListCompat-0.1.5.zip") -Force
-    Write-Host "Desktop package ready: $desktopZip" -ForegroundColor Green
-}
