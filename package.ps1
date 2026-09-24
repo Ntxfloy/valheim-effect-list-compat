@@ -22,7 +22,8 @@ Write-Host "Building SceneCompat Plugin..." -ForegroundColor Cyan
 if ($LASTEXITCODE -ne 0) { throw "Plugin build failed" }
 
 $staging = Join-Path $OutputDirectory "thunderstore_package"
-$zipPath = Join-Path $OutputDirectory "ValheimEffectListCompat-0.1.5.zip"
+$pkgName = "Ntxfloy-ValheimEffectListCompat-0.1.5.zip"
+$zipPath = Join-Path $OutputDirectory $pkgName
 
 if (Test-Path -LiteralPath $staging) { Remove-Item -LiteralPath $staging -Recurse -Force }
 New-Item -ItemType Directory -Force -Path (Join-Path $staging "BepInEx\patchers\Ntxfloy-ValheimEffectListCompat") | Out-Null
@@ -38,7 +39,9 @@ Write-Host "Thunderstore package ready: $zipPath" -ForegroundColor Green
 
 $desktopDir = Join-Path $env:USERPROFILE "Desktop"
 if (Test-Path $desktopDir) {
-    $desktopZip = Join-Path $desktopDir "ValheimEffectListCompat-0.1.5.zip"
+    $desktopZip = Join-Path $desktopDir $pkgName
     Copy-Item $zipPath -Destination $desktopZip -Force
+    # Also keep non-prefixed copy for backward compatibility
+    Copy-Item $zipPath -Destination (Join-Path $desktopDir "ValheimEffectListCompat-0.1.5.zip") -Force
     Write-Host "Desktop package ready: $desktopZip" -ForegroundColor Green
 }
