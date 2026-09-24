@@ -22,7 +22,7 @@ Write-Host "Building SceneCompat Plugin..." -ForegroundColor Cyan
 if ($LASTEXITCODE -ne 0) { throw "Plugin build failed" }
 
 $staging = Join-Path $OutputDirectory "thunderstore_package"
-$pkgName = "Ntxfloy-ValheimEffectListCompat-0.1.5.zip"
+$pkgName = "Ntxfloy-ValheimEffectListCompat-0.1.6.zip"
 $zipPath = Join-Path $OutputDirectory $pkgName
 
 if (Test-Path -LiteralPath $staging) { Remove-Item -LiteralPath $staging -Recurse -Force }

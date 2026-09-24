@@ -1,6 +1,6 @@
 # Valheim Compatibility Bridges
 
-[![Thunderstore Version](https://img.shields.io/badge/Thunderstore-v0.1.5-blue.svg)](https://thunderstore.io/c/valheim/p/Ntxfloy/ValheimEffectListCompat/)
+[![Thunderstore Version](https://img.shields.io/badge/Thunderstore-v0.1.6-blue.svg)](https://thunderstore.io/c/valheim/p/Ntxfloy/ValheimEffectListCompat/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Target: Valheim 1.0 (Unity 6)](https://img.shields.io/badge/Valheim-1.0%20(Unity%206)-orange.svg)](https://valheimgame.com/)
 
